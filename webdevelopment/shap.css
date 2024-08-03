@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* font-family:' Gilroy'; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition:all ease 1s ;
+
+}
+#box:hover img{
+    scale: 1.2;
+}
+/* button */
+button{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 12px 20px;
+    margin: 50px;
+    border: #fff;
+    background-color: rgb(41, 231, 241);
+    transition:  all ease 0.5s;
+}
+button:hover{
+    box-shadow: 5px 5px 10px #000 ;
+}
+/* img  */
+h1{
+    font-size: 50px;
+    font-weight: 900;
+    height: 30vh;
+    background-image: url(https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip:text ;
+    color: transparent;
+}
+/* multiple color */
+#box2{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to right bottom, red ,blue);
+}
+/* gola img */
+
+#gola{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border:  6px solid rgb(3, 2, 4);
+}
+#gola img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pooja{
+    font-weight: 900;
+    position: relative;
+}
+.pooja::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #333;
+    transition: all ease 1s;
+}
+.pooja:hover::after{
+    width: 100%;
+
+}
+
+#picture{
+    height: 300px;
+    width: 350px;
+    background-image: url(https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bottom{
+    height: 400%;
+    width: 100%;
+    background: linear-gradient(transparent black);
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.5s;
+}
+#picture:hover #bottom{
+    bottom: 0;
+}

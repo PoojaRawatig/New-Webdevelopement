@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+ /* scroll behavior*/ */
+ html{
+    scroll-behavior: smooth;
+}
+
+h
+ /* 1? */
+.box{
+    box-shadow: gray;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: rgb(230, 152, 8);
+    display: flex;
+    color: red;
+   
+
+
+}
+
+p{
+    max-width: 25rem;
+    padding: 1rem 0rem;
+
+}
+
+.box h2 {
+    writing-mode: vertical-lr;
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    #mydiv{
+        background-color: #ccf;
+        border-radius: 10px;
+        height: 100px;
+        padding-top: 70px;
+        text-align: center;
+        width: 150px;
+    }
+</style>
+<body>
+    <div id="mydiv">
+        Pooja Rawat
+
+    </div>
+    <script>
+var x = document.getElementById(".mydiv");
+var deg =0;
+window.setInterval(function(
+
+){
+    deg = deg + 3;
+    if(deg > 360){
+        deg = deg - 360;
+    }
+    x.style.transform = "rotateY( " + deg.toString (
+
+    ) + "deg)";
+
+},16);
+
+    </script>
+</body>
+</html>
